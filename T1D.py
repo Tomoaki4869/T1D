@@ -1,8 +1,8 @@
 import streamlit as st
 from openai import OpenAI
 
-st.caption("妊娠糖尿病")
-st.title("いのち 花子 (35)")
+st.caption("1型糖尿病")
+st.title("川上想太朗 (16)")
 
 # 🔑 APIキーの管理（セッション状態を利用）
 if "OPENAI_API_KEY" not in st.session_state:
@@ -51,3 +51,4 @@ if st.session_state.OPENAI_API_KEY:
         # AI応答の表示
         with st.chat_message("assistant"):
             st.markdown(ai_content)
+
