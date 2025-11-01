@@ -41,7 +41,7 @@ if st.session_state.OPENAI_API_KEY:
 
         # OpenAI API 応答生成
         completion = client.chat.completions.create(
-            model="gpt-4.1-mini",
+            model="gpt-4o-mini",
             messages=st.session_state.messages
         )
 
@@ -51,4 +51,5 @@ if st.session_state.OPENAI_API_KEY:
         # AI応答の表示
         with st.chat_message("assistant"):
             st.markdown(ai_content)
+
 
